@@ -7,18 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencias
 node_modules
+
+# Build y archivos generados
 dist
 dist-ssr
+build
+coverage
 *.local
 
-# Editor directories and files
+# Variables de entorno (claves y datos sensibles)
+.env
+.env.*
+!.env.example
+
+# Configuración del editor
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Caché
+.cache
+.eslintcache
